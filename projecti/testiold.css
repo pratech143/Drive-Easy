@@ -1,0 +1,166 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-top: 70px; 
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  margin-right: 15px;
+  font-size: 16px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff5f1f;
+}
+
+nav a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ff5f1f;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+
+nav a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+nav a.active {
+  color: #ff5f1f;
+}
+
+nav a.active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ff5f1f;
+  visibility: visible;
+  transform: scaleX(1);
+  transition: none;
+}
+
+nav a#reg:hover {
+  color: #000;
+}
+
+header {
+  background-color: #f1f1f1;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin-top: 80px;
+}
+
+.testimonial-section {
+  background-color: #fff;
+  padding: 40px 0;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.testimonial-item {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-item:hover {
+  transform: scale(1.05);
+}
+
+.testimonial-item img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.testimonial-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .register {
+    display: none;
+  }
+
+  .options {
+    margin-top: 20px;
+  }
+
+  .options nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .options a {
+    margin: 5px;
+  }
+
+  .testimonial-item {
+    max-width: 100%;
+  }
+}

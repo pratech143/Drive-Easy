@@ -1,0 +1,197 @@
+/* Reset default styles */
+body{
+  font-family: poppins,sans-serif ;
+  
+}
+.container{
+  display: flex;
+  justify-content: space-around; 
+  width: 100%; 
+  position: fixed;
+  background-color: white;
+  top: 0px;
+  color: black;
+}
+.logo{
+  float: left;
+  padding-top: 20px;
+  filter: saturate(5);
+}
+.register{
+ padding-top: 30px;
+float: right;
+}
+#reg{
+  border: 1px solid #ff5f1f;
+  background-color: #ff5f1f;
+}
+.options{
+  
+  padding: 30px;
+  text-align: center;
+  right: 50%;
+  left: 25%;
+}
+a{
+  text-decoration: none;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: black;
+  font-weight: 700;
+  right: 30px;
+  padding: 15px;
+  margin: 5px;
+}
+.container a:hover{
+  background-color: rgb(232, 230, 230);
+  padding: 30;
+}
+
+.signin-section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.signin-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.signin-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #ff5f1f;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff8726;
+}
+
+p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+a {
+  color: black;
+}
+
+.footer {
+  background-color: #ff5f1f;
+  padding: 20px;
+  margin-top: 80px;
+  text-align: center;
+  color: #fff;
+  bottom: 28px;
+  position: absolute;
+  width: 100%;
+  
+}
+.de img {
+width: 200px;
+filter: saturate(0);
+position: absolute;
+left: 100px;
+
+}
+.socials{
+   position: absolute;
+  right: 100px; 
+}
+.socials a :hover{
+  background-color: #ff5f1f;
+}
+.copyright p{
+  text-align: center;
+  padding-top: 10px;
+  background-color: black;
+  color: white;
+  margin: 0px;
+  position: absolute;
+
+ bottom: 0px;
+width: 100%;
+}
+.footer{
+  padding-bottom: 60px;
+  display: flex;
+justify-content: space-evenly;
+}
+
+/* @media (max-width: 768px) {
+  .footer-container {
+    flex-wrap: wrap;
+  }
+
+  .footer-logo,
+  .footer-social {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-social {
+    margin-bottom: 0;
+  }
+
+  .footer-social ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-social li {
+    margin: 0 5px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .register {
+    display: none;
+  }
+
+  .options {
+    margin-top: 20px;
+  }
+
+  .options nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .options a {
+    margin: 5px;
+  }
+} */
