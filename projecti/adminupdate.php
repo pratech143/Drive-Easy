@@ -1,16 +1,17 @@
 <?php
 include("dbconnect.php");
 $id = $_GET['id'];
+// echo $id;
 $selectQuery = "SELECT * FROM register WHERE id= '$id'";
 $data = mysqli_query($conn, $selectQuery);
 $row = mysqli_fetch_assoc($data);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-  $newname = $_POST['name'];
-  $newemail = $_POST['email'];
-  $newphone = $_POST['phone'];
-  $newPassword = $_POST['password'];
+  $newname = $_POST['Name'];
+  $newemail = $_POST['Email'];
+  $newphone = $_POST['Phone'];
+  $newPassword = $_POST['Password'];
   $updateQuery = "UPDATE register SET Name = '$newname', Email = '$newemail', Phone = '$newphone' WHERE id = '$id'";
   if ($conn->query($updateQuery) === TRUE) {
       header("location: admin.php?message='updated successfully'");

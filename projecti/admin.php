@@ -206,7 +206,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <button onclick="showCarData()">cars</button>
         <button onclick="showreservationData()">reservation</button>
     </div>
-    <?php if (mysqli_num_rows($result) > 0) { ?>
+    <?php 
+
+    if (mysqli_num_rows($result) > 0) { ?>
         <div class="user-data" id="userData">
             <table border='1'>
                 <tr>
@@ -218,7 +220,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <th>Actions</th>
                 </tr>
 
-                <?php while ($row = mysqli_fetch_assoc($result)) { ?>
+                <?php while ($row = mysqli_fetch_array($result)) { ?>
                     <tr>
                         <td id="id"><?php echo $row["id"]; ?></td>
                         <td><?php echo $row["Name"]; ?></td>
